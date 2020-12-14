@@ -51,7 +51,8 @@ def mnist():
     cv2.imshow("mnist_image", im)
     cv2.imshow("predicted_label", pred_image)
     cv2.imshow("true_label", true_image)
-    
+
+# click on the "ClickButton" again and again to test different mnist images
 button = Button(window1, text = "ClickButton", command = mnist)
 button.pack()
 window1.mainloop()
