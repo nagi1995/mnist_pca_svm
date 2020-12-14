@@ -52,7 +52,7 @@ def mnist():
     cv2.imshow("predicted_label", pred_image)
     cv2.imshow("true_label", true_image)
     
-button = Button(window1, text = "Click", command = mnist)
+button = Button(window1, text = "ClickButton", command = mnist)
 button.pack()
 window1.mainloop()
 
