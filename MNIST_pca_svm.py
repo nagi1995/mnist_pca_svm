@@ -28,9 +28,9 @@ x, y = xy[:, :-1], xy[:, -1]
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.99, random_state = 4)
 
 #%%
-
+# checking whether all hand written numbers are present in training set or not
 y_train_df = pd.Series(y_train)
-print(np.sort(pd.unique(y_train_df)))
+print(np.sort(pd.unique(y_train_df))) # This statement should print all numbers from 0 - 9.
 
 #%%
 
